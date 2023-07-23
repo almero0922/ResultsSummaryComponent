@@ -4,6 +4,10 @@
 --OrangeyYellow: hsl(39, 100%, 56%);
 --GreenTeal: hsl(166, 100%, 37%);
 --CobaltBlue: hsl(234, 85%, 45%);
+--LightRedB: hsl(0, 100%, 67%,0.08);
+--OrangeyYellowB: hsl(39, 100%, 56%,0.08);
+--GreenTealB: hsl(166, 100%, 37%,0.08);
+--CobaltBlueB: hsl(234, 85%, 45%,0.08);
 /*Gradients*/
 --LightSlateBlue: #7857ff;
 --Lightroyalblue: #2e2be9;
@@ -76,7 +80,7 @@ body{
     margin: 0;
 }
 .result-container p{
-    color: var(--PaleBlue);
+    color: var(--LightLavender);
     margin: 0;
     text-align: center;
     padding: 0 2.8rem 0 2.8rem;
@@ -96,14 +100,17 @@ body{
     height: 50%;
     display: flex;
     padding: 0.8rem;
-    /*background-color: hsla(0, 100%, 67%,0.1);*/
+    background-color: hsla(0, 100%, 67%,0.1);
     align-items: center;
     justify-content: space-between;
     border-radius: 15px;
-    opacity: 0.2;
+}
+.summary-type-container{
+    display: flex;
+    align-items: center;
 }
 .summary-type-container p{
-    color: var(--LightRed);
+    color: hsl(0, 100%, 67%, 1);
     font-weight: bold;
     font-size: 18px;
 }
@@ -119,6 +126,13 @@ body{
     background-image: linear-gradient(to left bottom, #7857ff, #694cf9, #5941f4, #4736ee, #2e2be9); 
     cursor: pointer;
 }
-.summary-container>div:nth-child(5){
-    background-color: hsl(39, 100%, 56%);
+.summary-type-container img{
+    margin-right: 0.8rem;
+}
+.score{
+    color: var(--LightLavender)
+}
+.score span{
+    margin-right: 0.6rem;
+    color: black;
 }
