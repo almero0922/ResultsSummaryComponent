@@ -24,6 +24,5 @@ fetch('./data.json')
             sumContainers[i].children[0].children[1].innerText = json[i].category;
             sumContainers[i].children[0].children[1].style.color = cssColorsValues[i];
             sumContainers[i].children[1].children[0].innerText = json[i].score;
-            sumContainers[i].children[1].children[0].style.marginRight = 'o.8rem';
         }
     })
